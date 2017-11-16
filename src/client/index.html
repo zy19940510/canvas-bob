@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>球球大作战-低仿版</title>
+    <link rel="icon" href="img/icon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/main.css" />
+    <audio id="split_cell" src="audio/split.mp3"></audio>
+    <audio id="spawn_cell" src="audio/spawn.mp3"></audio>
+</head>
+<body style="overflow: hidden;">
+    <div id="gameAreaWrapper">
+        <div id="status"><span class="title">排行榜</span></div>
+        <div class="chatbox" id="chatbox">
+            <ul id="chatList" class="chat-list"></ul>
+            <input id="chatInput" type="text" class="chat-input" placeholder="..." maxlength="35" />
+        </div>
+        <canvas tabindex="1" id="cvs"></canvas>
+    </div>
+    <div id="startMenuWrapper">
+        <div id="startMenu">
+            <p><img src="img/play.jpg"></p>
+            <input type="text" tabindex="0" autofocus placeholder="请输入你的昵称" id="playerNameInput" maxlength="25" />
+            <br />
+            <a onclick="document.getElementById('spawn_cell').play();"><button id="startButton">开始</button></a>
+            <br />
+        </div>
+    </div>
+    <script src="//code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
